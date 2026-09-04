@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrés Jiménez — Desarrollador Backend</title>
+    <meta
+      name="description"
+      content="Portafolio de Andrés Felipe Jiménez Ramírez, estudiante de ingeniería de sistemas y desarrollador backend en formación (Java, Spring Boot, MySQL, PostgreSQL)."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#inicio" class="nav__brand"
+          >AJ<span class="nav__brand-dot">.</span></a
+        >
+
+        <button
+          class="nav__toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="sr-only">Abrir menú</span>
+        </button>
+
+        <ul class="nav__menu" id="navMenu">
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto" class="nav__cta">Contáctame</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section class="hero" id="inicio">
+        <div class="hero__grid">
+          <div class="hero__text">
+            <p class="hero__eyebrow">¿Quién soy?</p>
+            <h1 class="hero__name">Andrés Felipe<br />Jiménez Ramírez</h1>
+            <p class="hero__role">
+              Desarrollador backend en formación — Java · Spring Boot · MySQL /
+              PostgreSQL
+            </p>
+            <p class="hero__bio">
+              Estudiante de ingeniería de sistemas. Me especializo en construir
+              la lógica y las bases de datos detrás de una aplicación, y
+              complemento ese trabajo con nociones sólidas de HTML, CSS y
+              JavaScript para entender el producto de punta a punta.
+            </p>
+            <div class="hero__actions">
+              <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+              <a href="#contacto" class="btn btn--ghost">Escríbeme</a>
+            </div>
+          </div>
+
+          <div class="hero__aside">
+            <figure class="photo-frame">
+              <img
+                src="assets/img/perfil.jpg"
+                alt="Retrato de Andrés Felipe Jiménez Ramírez"
+                width="800"
+                height="1000"
+                loading="eager"
+              />
+              <figcaption class="photo-frame__tag">
+                git branch: <strong>en-formación</strong>
+              </figcaption>
+            </figure>
+
+            <pre
+              class="stack-snippet"
+              aria-label="Lista de tecnologías en formato de código"
+            ><code><span class="tok-kw">const</span> stack = [
+  <span class="tok-str">"Java"</span>, <span class="tok-str">"Spring Boot"</span>,
+  <span class="tok-str">"MySQL"</span>, <span class="tok-str">"PostgreSQL"</span>,
+  <span class="tok-str">"HTML"</span>, <span class="tok-str">"CSS"</span>, <span class="tok-str">"JS"</span>
+];</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="sobre-mi">
+        <div class="section__inner">
+          <h2 class="section__title">Sobre mí</h2>
+          <p class="section__lead">
+            Disfruto entender cómo se mueven los datos dentro de una aplicación:
+            desde el diseño de una base de datos hasta la lógica que la conecta
+            con quien la usa. Estoy en un momento de aprendizaje constante,
+            construyendo proyectos reales para aplicar lo que voy estudiando en
+            ingeniería de sistemas. Sueño con algun día poder trabajar en el
+            desarrollo de videojuegos y contribuir a la industria del
+            entretenimiento digital.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="habilidades">
+        <div class="section__inner">
+          <h2 class="section__title">Habilidades</h2>
+
+          <div class="skills">
+            <div class="skills__group">
+              <h3 class="skills__group-title">Backend</h3>
+              <ul class="skills__list">
+                <li>Java</li>
+                <li>Spring Boot</li>
+              </ul>
+            </div>
+
+            <div class="skills__group">
+              <h3 class="skills__group-title">Bases de datos</h3>
+              <ul class="skills__list">
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
+
+            <div class="skills__group">
+              <h3 class="skills__group-title">Frontend</h3>
+              <ul class="skills__list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+
+            <div class="skills__group">
+              <h3 class="skills__group-title">Herramientas</h3>
+              <ul class="skills__list">
+                <li>Postman</li>
+                <li>Git</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="proyectos">
+        <div class="section__inner">
+          <h2 class="section__title">Proyectos</h2>
+
+          <article class="project">
+            <div class="project__media">
+              <img
+                src="assets/img/proyecto-backloggaming.jpg"
+                alt="Interfaz de la aplicación Backlog Gaming mostrando el formulario para registrar un videojuego"
+                width="900"
+                height="480"
+                loading="lazy"
+              />
+            </div>
+            <div class="project__body">
+              <p class="project__kicker">Proyecto personal</p>
+              <h3 class="project__title">Backlog Gaming</h3>
+              <p class="project__desc">
+                Aplicación web para registrar y consultar los videojuegos que
+                estoy jugando, con sus características principales (plataforma,
+                género, calificación).
+              </p>
+              <ul class="project__tags">
+                <li>SQL</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Prisma</li>
+              </ul>
+              <div class="project__links">
+                <a
+                  href="https://github.com/OctopusZeroKanagawa/Mision-3-Backend-"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Repositorio backend</a
+                >
+                <a
+                  href="https://github.com/OctopusZeroKanagawa/Mision-3-Frontend-"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Repositorio frontend</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project project--reverse">
+            <div class="project__media">
+              <img
+                src="assets/img/proyecto-ecomarket.jpg"
+                alt="Página de inicio de EcoMarket, tienda de productos ecológicos"
+                width="900"
+                height="458"
+                loading="lazy"
+              />
+            </div>
+            <div class="project__body">
+              <p class="project__kicker">Proyecto de curso</p>
+              <h3 class="project__title">EcoMarket</h3>
+              <p class="project__desc">
+                Sitio web responsive para una tienda de productos ecológicos,
+                construido únicamente con HTML y CSS, simulando comportamientos
+                de JavaScript mediante CSS avanzado.
+              </p>
+              <ul class="project__tags">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <div class="project__links">
+                <a
+                  href="https://github.com/OctopusZeroKanagawa/EcoMarket_AndresJimenez"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Repositorio</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__media">
+              <img
+                src="assets/img/proyecto-restauranteacme.jpg"
+                alt="Fragmento de código Python en un editor, representativo del backend de Restaurante Acme"
+                width="900"
+                height="480"
+                loading="lazy"
+              />
+            </div>
+            <div class="project__body">
+              <p class="project__kicker">Proyecto de curso</p>
+              <h3 class="project__title">Restaurante Acme</h3>
+              <p class="project__desc">
+                Backend para la operación de un restaurante: sistema de gestión
+                de mesas y carrito de ventas.
+              </p>
+              <ul class="project__tags">
+                <li>Python</li>
+              </ul>
+              <div class="project__links">
+                <a
+                  href="https://github.com/OctopusZeroKanagawa/RestauranteAcme"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Repositorio</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="contacto">
+        <div class="section__inner">
+          <h2 class="section__title">Contacto</h2>
+          <p class="section__lead">
+            ¿Tienes una idea, una vacante o simplemente quieres hablar de
+            código? Escríbeme.
+          </p>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-list__label">Correo</span>
+              <a href="mailto:andresfelipejr@ufps.edu.co"
+                >andresfelipejr@ufps.edu.co</a
+              >
+            </li>
+            <li>
+              <span class="contact-list__label">GitHub</span>
+              <a
+                href="https://github.com/OctopusZeroKanagawa"
+                target="_blank"
+                rel="noopener noreferrer"
+                >github.com/OctopusZeroKanagawa</a
+              >
+            </li>
+            <li>
+              <span class="contact-list__label">LinkedIn</span>
+              <a
+                href="https://www.linkedin.com/in/andr%C3%A9s-jim%C3%A9nez-969162383/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >linkedin.com/in/andrés-jiménez</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Andrés Felipe Jiménez Ramírez.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
