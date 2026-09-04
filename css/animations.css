@@ -1,0 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.nav__menu {
+  transition: max-height 0.25s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .nav__menu {
+    transition: none;
+  }
+}
